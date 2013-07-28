@@ -1,0 +1,3 @@
+[submodule "projects/telecommute"]
+	path = projects/telecommute
+	url = https://amooiman@bitbucket.org/amooiman/team-mayo-telecommute.git
