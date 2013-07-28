@@ -95,21 +95,20 @@ li, p, a{
 }
 .resume_item{
 	margin-bottom: 0;
+	line-height: 1.5em;
+	h3{
+		display: inline-block;
+	}
 }
 
 .resume_item + ul{
 	margin-top: .75em;
 }
-.resume_item span{
-	display: block;
-}
-
-.organization, .location{
-	font-size: .7em;
-	font-weight: normal;
-}
-
 .organization_dates{
-	font-size: .7em;
-	font-weight: normal;
+	@include sans-stack;
+}
+.organization{
+	display: inline-block;
+	font-size: 1.1em;
+	@include sans-stack;
 }
