@@ -1,4 +1,4 @@
-/*Built with some simple scss. Check it out at resume.scss, but it's nothing special.*/
+/*Built with some simple scss. Check it out at http://alanmooiman.com/scss/resume.scss, but it's nothing special.*/
 * {
   box-sizing: border-box; }
 
@@ -43,14 +43,19 @@ body {
   background-image: url("../img/textures/noisy_grid.png"); }
 
 a {
-  color: #333333;
-  text-decoration: none; }
+  color: inherit; }
 
-li, p {
+li, p, a {
   line-height: 1.5; }
 
 .content {
   clear: both;
+  margin-top: 1em; }
+
+.email {
+  text-decoration: none; }
+
+.project {
   margin-top: 1em; }
 
 /*ul*/
