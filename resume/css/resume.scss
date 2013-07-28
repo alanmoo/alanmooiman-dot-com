@@ -1,0 +1,111 @@
+/*Built with some simple scss. Check it out at resume.scss, but it's nothing special.*/
+
+$body-color: #333;
+
+@mixin medium {
+	@media screen and (min-width: 500px){
+		& {	@content; }
+	}
+}
+
+@mixin sans-stack{font-family: Optima, Candara, "Trebuchet MS", sans-serif;}
+
+*{box-sizing: border-box;}
+
+h1, h2, h3{
+		@include sans-stack;
+		text-shadow: rgb(200, 200, 200) 1px 1px 0px;
+}
+
+.name_title{
+	margin: 1em 0; 
+	h1{
+		margin: .25em 0 0;
+	}
+	h2{
+		margin: 0;
+		font-size: 1.5em;
+	}
+}
+
+.contact_info{
+	text-align: left;
+	@include sans-stack;
+	span{
+		display: block;
+	}
+	min-width: 45%;
+}
+
+.phone{
+	color: $body-color;
+}
+
+h1{
+	font-size: 2.75em;
+}
+
+h2{
+	font-size: 2em;
+	margin-bottom: .25em;
+}
+
+h3{
+	font-size: 1.4em;
+	margin: .25em auto;
+}
+
+body{
+	padding: 0 2%;
+	max-width: 960px;
+	margin: 0 auto;
+	color: $body-color;
+	background-image: url('../images/noisy_grid.png');
+
+}
+
+a{
+	color: $body-color;
+	text-decoration: none;
+}
+
+li, p{
+	line-height: 1.5;
+}
+
+.content{
+	clear: both;
+	margin-top: 1em;
+}
+
+/*ul*/.skills{
+@include medium{
+	list-style-position: inside;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	}
+	li{
+	margin-left: 1px /*This is dumb. Webkit cuts off the bullet if I don't have this.*/
+	}
+}
+.resume_item{
+	margin-bottom: 0;
+}
+
+.resume_item + ul{
+	margin-top: .75em;
+}
+.resume_item span{
+	display: block;
+}
+
+.organization, .location{
+	font-size: .7em;
+	font-weight: normal;
+}
+
+.organization_dates{
+	font-size: .7em;
+	font-weight: normal;
+}

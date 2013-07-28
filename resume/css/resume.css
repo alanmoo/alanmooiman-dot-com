@@ -1,0 +1,81 @@
+/*Built with some simple scss. Check it out at resume.scss, but it's nothing special.*/
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3 {
+  font-family: Optima, Candara, "Trebuchet MS", sans-serif;
+  text-shadow: #c8c8c8 1px 1px 0px; }
+
+.name_title {
+  margin: 1em 0; }
+  .name_title h1 {
+    margin: 0.25em 0 0; }
+  .name_title h2 {
+    margin: 0;
+    font-size: 1.5em; }
+
+.contact_info {
+  text-align: left;
+  font-family: Optima, Candara, "Trebuchet MS", sans-serif;
+  min-width: 45%; }
+  .contact_info span {
+    display: block; }
+
+.phone {
+  color: #333333; }
+
+h1 {
+  font-size: 2.75em; }
+
+h2 {
+  font-size: 2em;
+  margin-bottom: .25em; }
+
+h3 {
+  font-size: 1.4em;
+  margin: 0.25em auto; }
+
+body {
+  padding: 0 2%;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #333333;
+  background-image: url("../images/noisy_grid.png"); }
+
+a {
+  color: #333333;
+  text-decoration: none; }
+
+li, p {
+  line-height: 1.5; }
+
+.content {
+  clear: both;
+  margin-top: 1em; }
+
+/*ul*/
+@media screen and (min-width: 500px) {
+  .skills {
+    list-style-position: inside;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
+.skills li {
+  margin-left: 1px; }
+
+.resume_item {
+  margin-bottom: 0; }
+
+.resume_item + ul {
+  margin-top: .75em; }
+
+.resume_item span {
+  display: block; }
+
+.organization, .location {
+  font-size: .7em;
+  font-weight: normal; }
+
+.organization_dates {
+  font-size: .7em;
+  font-weight: normal; }
