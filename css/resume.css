@@ -2,8 +2,10 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: Optima, Candara, "Trebuchet MS", sans-serif; }
+
 h1, h2, h3 {
-  font-family: Optima, Candara, "Trebuchet MS", sans-serif;
   text-shadow: #c8c8c8 1px 1px 0px; }
 
 .name_title {
@@ -16,7 +18,6 @@ h1, h2, h3 {
 
 .contact_info {
   text-align: left;
-  font-family: Optima, Candara, "Trebuchet MS", sans-serif;
   min-width: 45%; }
   .contact_info span {
     display: block; }
@@ -77,10 +78,6 @@ li, p, a {
 .resume_item + ul {
   margin-top: .75em; }
 
-.organization_dates {
-  font-family: Optima, Candara, "Trebuchet MS", sans-serif; }
-
 .organization {
   display: inline-block;
-  font-size: 1.1em;
-  font-family: Optima, Candara, "Trebuchet MS", sans-serif; }
+  font-size: 1.1em; }

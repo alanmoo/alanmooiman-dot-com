@@ -7,13 +7,16 @@ $body-color: #333;
 		& {	@content; }
 	}
 }
-
 @mixin sans-stack{font-family: Optima, Candara, "Trebuchet MS", sans-serif;}
 
 *{box-sizing: border-box;}
 
+body{
+	@include sans-stack;
+}
+
 h1, h2, h3{
-		@include sans-stack;
+
 		text-shadow: rgb(200, 200, 200) 1px 1px 0px;
 }
 
@@ -30,7 +33,6 @@ h1, h2, h3{
 
 .contact_info{
 	text-align: left;
-	@include sans-stack;
 	span{
 		display: block;
 	}
@@ -105,10 +107,8 @@ li, p, a{
 	margin-top: .75em;
 }
 .organization_dates{
-	@include sans-stack;
 }
 .organization{
 	display: inline-block;
 	font-size: 1.1em;
-	@include sans-stack;
 }
