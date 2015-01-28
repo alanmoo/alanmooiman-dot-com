@@ -11,7 +11,7 @@ h1, h2, h3 {
 .name_title {
   margin: 1em 0; }
   .name_title h1 {
-    margin: 0.25em 0 0; }
+    margin: .25em 0 0; }
   .name_title h2 {
     margin: 0;
     font-size: 1.5em; }
@@ -23,7 +23,7 @@ h1, h2, h3 {
     display: block; }
 
 .phone {
-  color: #333333; }
+  color: #333; }
 
 h1 {
   font-size: 2.75em; }
@@ -34,14 +34,17 @@ h2 {
 
 h3 {
   font-size: 1.4em;
-  margin: 0.25em auto; }
+  margin: .25em auto; }
 
 body {
   padding: 0 2%;
   max-width: 960px;
   margin: 0 auto;
-  color: #333333;
+  color: #333;
   background-image: url("../img/textures/noisy_grid.png"); }
+
+em {
+  font-style: normal; }
 
 a {
   color: inherit; }
@@ -81,3 +84,32 @@ li, p, a {
 .organization {
   display: inline-block;
   font-size: 1.1em; }
+
+.show-print {
+  display: none; }
+
+@media print {
+  html, body {
+    font-size: 12px; }
+
+  h1 {
+    font-size: 1.5em; }
+
+  h2 {
+    font-size: 1.33em; }
+
+  h3 {
+    font-size: 1.25em; }
+
+  h4 {
+    font-size: 1em;
+    font-weight: bold; }
+
+  .hide-print {
+    display: none; }
+
+  .show-print {
+    display: block;
+    float: right; } }
+
+/*# sourceMappingURL=resume.css.map */

@@ -66,6 +66,10 @@ body{
 
 }
 
+em{
+	font-style: normal;
+}
+
 a{
 	color: inherit;
 }
@@ -111,4 +115,35 @@ li, p, a{
 .organization{
 	display: inline-block;
 	font-size: 1.1em;
+}
+
+.show-print{
+	display: none;
+}
+
+@media print {
+	html, body{
+		font-size: 12px;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	h2{
+		font-size: 1.33em;
+	}
+	h3{
+		font-size: 1.25em;
+	}
+	h4{
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	.hide-print{
+		display: none;
+	}
+	.show-print{
+		display: block;
+		float: right;
+	}
 }
