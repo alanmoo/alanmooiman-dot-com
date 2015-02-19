@@ -20,7 +20,7 @@ h1, h2, h3{
 		text-shadow: rgb(200, 200, 200) 1px 1px 0px;
 }
 
-.name_title{
+header{
 	margin: 1em 0; 
 	h1{
 		margin: .25em 0 0;
@@ -50,6 +50,7 @@ h1{
 h2{
 	font-size: 2em;
 	margin-bottom: .25em;
+	border-bottom: 1px solid gray;
 }
 
 h3{

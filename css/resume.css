@@ -8,11 +8,11 @@ body {
 h1, h2, h3 {
   text-shadow: #c8c8c8 1px 1px 0px; }
 
-.name_title {
+header {
   margin: 1em 0; }
-  .name_title h1 {
+  header h1 {
     margin: .25em 0 0; }
-  .name_title h2 {
+  header h2 {
     margin: 0;
     font-size: 1.5em; }
 
@@ -30,7 +30,8 @@ h1 {
 
 h2 {
   font-size: 2em;
-  margin-bottom: .25em; }
+  margin-bottom: .25em;
+  border-bottom: 1px solid gray; }
 
 h3 {
   font-size: 1.4em;
