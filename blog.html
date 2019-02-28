@@ -1,0 +1,22 @@
+---
+title: Moo on the web
+layout: default
+---
+
+  {% for post in site.posts %}
+
+    <article class="post">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="{{post.date | date:'%B %-d, %Y'}}">{{post.date | date:"%B %-d, %Y"}}</time> </span>
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            <p>{{post.excerpt}}</p>
+            <a href="{{post.url}}">Read more</a>
+        </section>
+    </article>
+  {% endfor %}
+    
+
+
