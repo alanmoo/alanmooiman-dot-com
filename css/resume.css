@@ -71,6 +71,7 @@ li, p, a {
     -webkit-column-count: 2;
     column-count: 2; } }
 .skills li {
+  break-inside: avoid;
   margin-left: 1px; }
 
 .resume_item {
