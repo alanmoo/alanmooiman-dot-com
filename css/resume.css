@@ -8,6 +8,9 @@ body {
 h1, h2, h3 {
   text-shadow: #c8c8c8 1px 1px 0px; }
 
+time, .range-indicator {
+  font-style: italic; }
+
 header {
   margin: 1em 0; }
   header h1 {
