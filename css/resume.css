@@ -110,6 +110,10 @@ li, p, a {
     font-size: 1em;
     font-weight: bold; }
 
+  .resume_item, .significant_project{
+    break-inside: avoid-page;
+  }
+
   .hide-print {
     display: none; }
 
